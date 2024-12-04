@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FFF;
+  --foreground: #171717;
+  --buttonColor: #F49C27;
+  --whiteBotton: #F5F3EF;
+  --parrafos: #757459;
+  --borderColor: #E5E5E5;
+}
+
+.image{
+  width: 100%;
+  background-image: url("../public/toledo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
