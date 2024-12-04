@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c5d3c493effa8531dad5e41822c7e23c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c5d3c493effa8531dad5e41822c7e23c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c5d3c493effa8531dad5e41822c7e23c = L.map(
+                "map_c5d3c493effa8531dad5e41822c7e23c",
+                {
+                    center: [39.8581, -4.0226],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_45c3e54904442a20c451716ab4498fa0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+            var marker_b3a280f43024b84bc07c7728b6bb8f58 = L.marker(
+                [39.8597, -4.0235],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_5a4f3d1ea14636cb652ab6c3a72c9ada = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5350f9672be6a84f5c9c1d60d6d471fc = $(`<div id="html_5350f9672be6a84f5c9c1d60d6d471fc" style="width: 100.0%; height: 100.0%;">Plaza de Zocodover</div>`)[0];
+            popup_5a4f3d1ea14636cb652ab6c3a72c9ada.setContent(html_5350f9672be6a84f5c9c1d60d6d471fc);
+        
+
+        marker_b3a280f43024b84bc07c7728b6bb8f58.bindPopup(popup_5a4f3d1ea14636cb652ab6c3a72c9ada)
+        ;
+
+        
+    
+    
+            var marker_9d3f36375e960d51bacf15f4b2beb034 = L.marker(
+                [39.8581, -4.0226],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_40532fe2908b67410275f05b223082c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e995ec7e4abf3ce38b190a200e94f98 = $(`<div id="html_4e995ec7e4abf3ce38b190a200e94f98" style="width: 100.0%; height: 100.0%;">Catedral Primada de Toledo</div>`)[0];
+            popup_40532fe2908b67410275f05b223082c5.setContent(html_4e995ec7e4abf3ce38b190a200e94f98);
+        
+
+        marker_9d3f36375e960d51bacf15f4b2beb034.bindPopup(popup_40532fe2908b67410275f05b223082c5)
+        ;
+
+        
+    
+    
+            var marker_1de5b35fdd9ee9529c7cc4331eaaa173 = L.marker(
+                [39.8579, -4.0213],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_75a103bd8995f8ccf7e03b52ca04d382 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ee2e0a5f70c77d172fe4c4a539a0459 = $(`<div id="html_9ee2e0a5f70c77d172fe4c4a539a0459" style="width: 100.0%; height: 100.0%;">Alcázar de Toledo</div>`)[0];
+            popup_75a103bd8995f8ccf7e03b52ca04d382.setContent(html_9ee2e0a5f70c77d172fe4c4a539a0459);
+        
+
+        marker_1de5b35fdd9ee9529c7cc4331eaaa173.bindPopup(popup_75a103bd8995f8ccf7e03b52ca04d382)
+        ;
+
+        
+    
+    
+            var marker_8ed331eae2b87097c852641b08952822 = L.marker(
+                [39.8603, -4.0256],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_df9f902449aadd875e64659c0f901727 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd0699d4f132a9a18080122d1afc6d41 = $(`<div id="html_cd0699d4f132a9a18080122d1afc6d41" style="width: 100.0%; height: 100.0%;">Mezquita del Cristo de la Luz</div>`)[0];
+            popup_df9f902449aadd875e64659c0f901727.setContent(html_cd0699d4f132a9a18080122d1afc6d41);
+        
+
+        marker_8ed331eae2b87097c852641b08952822.bindPopup(popup_df9f902449aadd875e64659c0f901727)
+        ;
+
+        
+    
+    
+            var marker_1581b39f0ed8fffb3dfd4d1283ad7fdf = L.marker(
+                [39.8627, -4.0284],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_09cba255530a252bfdd028b4274d52e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ab0f2b68def8c3847f69915f9586e08 = $(`<div id="html_1ab0f2b68def8c3847f69915f9586e08" style="width: 100.0%; height: 100.0%;">Puerta de Bisagra</div>`)[0];
+            popup_09cba255530a252bfdd028b4274d52e0.setContent(html_1ab0f2b68def8c3847f69915f9586e08);
+        
+
+        marker_1581b39f0ed8fffb3dfd4d1283ad7fdf.bindPopup(popup_09cba255530a252bfdd028b4274d52e0)
+        ;
+
+        
+    
+    
+            var marker_2c2ccec6ea96caf091209eb033cc40c0 = L.marker(
+                [39.8612, -4.0179],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_a90db8c39ae07ae508c9042272a6041a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19ec186ac90e2c79e333182cd6cb52d4 = $(`<div id="html_19ec186ac90e2c79e333182cd6cb52d4" style="width: 100.0%; height: 100.0%;">Puente de Alcántara</div>`)[0];
+            popup_a90db8c39ae07ae508c9042272a6041a.setContent(html_19ec186ac90e2c79e333182cd6cb52d4);
+        
+
+        marker_2c2ccec6ea96caf091209eb033cc40c0.bindPopup(popup_a90db8c39ae07ae508c9042272a6041a)
+        ;
+
+        
+    
+    
+            var marker_559a515d8073f8f1298c5aa07b8cdd52 = L.marker(
+                [39.8565, -4.0219],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_0f5303043dd257139fe409527e903cc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69694d282bc75918a955f55a5f1b433a = $(`<div id="html_69694d282bc75918a955f55a5f1b433a" style="width: 100.0%; height: 100.0%;">Casco Histórico y la Judería</div>`)[0];
+            popup_0f5303043dd257139fe409527e903cc9.setContent(html_69694d282bc75918a955f55a5f1b433a);
+        
+
+        marker_559a515d8073f8f1298c5aa07b8cdd52.bindPopup(popup_0f5303043dd257139fe409527e903cc9)
+        ;
+
+        
+    
+    
+            var marker_de0da7d762a83ce42dc5df264cb21c2e = L.marker(
+                [39.8569, -4.0312],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_98b061672e989868ba2aa13b68fe6441 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e981cdfd582f5eac7c65f2b418b280c = $(`<div id="html_3e981cdfd582f5eac7c65f2b418b280c" style="width: 100.0%; height: 100.0%;">Iglesia de Santo Tomé</div>`)[0];
+            popup_98b061672e989868ba2aa13b68fe6441.setContent(html_3e981cdfd582f5eac7c65f2b418b280c);
+        
+
+        marker_de0da7d762a83ce42dc5df264cb21c2e.bindPopup(popup_98b061672e989868ba2aa13b68fe6441)
+        ;
+
+        
+    
+    
+            var marker_96a41f50e58fc9af20f23868aab4c2d4 = L.marker(
+                [39.8568, -4.033],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_8027cf9f3e7b7961f1d73dcf7265aabb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f50c8904fa43e69ddcde2e174e113234 = $(`<div id="html_f50c8904fa43e69ddcde2e174e113234" style="width: 100.0%; height: 100.0%;">Museo del Greco</div>`)[0];
+            popup_8027cf9f3e7b7961f1d73dcf7265aabb.setContent(html_f50c8904fa43e69ddcde2e174e113234);
+        
+
+        marker_96a41f50e58fc9af20f23868aab4c2d4.bindPopup(popup_8027cf9f3e7b7961f1d73dcf7265aabb)
+        ;
+
+        
+    
+    
+            var marker_2362d342d41bcd36656530603fa738e4 = L.marker(
+                [39.8518, -4.0293],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_57db08c7dcbbcb8fb8e362ca2a34a509 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0e9dc8a930c0080d3a00d0569cdeebd = $(`<div id="html_a0e9dc8a930c0080d3a00d0569cdeebd" style="width: 100.0%; height: 100.0%;">Mirador del Valle</div>`)[0];
+            popup_57db08c7dcbbcb8fb8e362ca2a34a509.setContent(html_a0e9dc8a930c0080d3a00d0569cdeebd);
+        
+
+        marker_2362d342d41bcd36656530603fa738e4.bindPopup(popup_57db08c7dcbbcb8fb8e362ca2a34a509)
+        ;
+
+        
+    
+    
+            var marker_c50b1321acbfcc5a8ce6ddf8ae1e290c = L.marker(
+                [39.8574, -4.0335],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_cefb18fc91d12bb4dee7798b6426328c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_890182f72aaf43d1745a846db4925fe7 = $(`<div id="html_890182f72aaf43d1745a846db4925fe7" style="width: 100.0%; height: 100.0%;">Monasterio de San Juan de los Reyes</div>`)[0];
+            popup_cefb18fc91d12bb4dee7798b6426328c.setContent(html_890182f72aaf43d1745a846db4925fe7);
+        
+
+        marker_c50b1321acbfcc5a8ce6ddf8ae1e290c.bindPopup(popup_cefb18fc91d12bb4dee7798b6426328c)
+        ;
+
+        
+    
+    
+            var marker_f1fb32c46f2ed6b12fe72fc98ee28bde = L.marker(
+                [39.8542, -4.0336],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_e4155f3af40e801478f2f2803372a667 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9657284e73bfea1c630dca699ba0ecfb = $(`<div id="html_9657284e73bfea1c630dca699ba0ecfb" style="width: 100.0%; height: 100.0%;">Puente de San Martín</div>`)[0];
+            popup_e4155f3af40e801478f2f2803372a667.setContent(html_9657284e73bfea1c630dca699ba0ecfb);
+        
+
+        marker_f1fb32c46f2ed6b12fe72fc98ee28bde.bindPopup(popup_e4155f3af40e801478f2f2803372a667)
+        ;
+
+        
+    
+    
+            var marker_1c352e2f5643cc955427c1498e1fb296 = L.marker(
+                [39.6117, -4.522],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_a972777711440d875f7fa1ca917da2e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92e4820b6582b5ea2acdad750dbd1a77 = $(`<div id="html_92e4820b6582b5ea2acdad750dbd1a77" style="width: 100.0%; height: 100.0%;">Navahermosa</div>`)[0];
+            popup_a972777711440d875f7fa1ca917da2e3.setContent(html_92e4820b6582b5ea2acdad750dbd1a77);
+        
+
+        marker_1c352e2f5643cc955427c1498e1fb296.bindPopup(popup_a972777711440d875f7fa1ca917da2e3)
+        ;
+
+        
+    
+    
+            var marker_4f67b69fb4a4cb3c735815886d603101 = L.marker(
+                [39.6284, -4.5382],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_099ee89d88771d8adac4c27574cec113 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d490b061f887384c8ee0621770a6d4bc = $(`<div id="html_d490b061f887384c8ee0621770a6d4bc" style="width: 100.0%; height: 100.0%;">Hontanar</div>`)[0];
+            popup_099ee89d88771d8adac4c27574cec113.setContent(html_d490b061f887384c8ee0621770a6d4bc);
+        
+
+        marker_4f67b69fb4a4cb3c735815886d603101.bindPopup(popup_099ee89d88771d8adac4c27574cec113)
+        ;
+
+        
+    
+    
+            var marker_0b1ffd077a9203e200280ea7c8a18ceb = L.marker(
+                [39.6868, -4.4524],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_efc8e1bc170c217abf8b69e49fd06720 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca6f2259df6715c7d8fb157516ba6c50 = $(`<div id="html_ca6f2259df6715c7d8fb157516ba6c50" style="width: 100.0%; height: 100.0%;">Villarejo de Montalbán</div>`)[0];
+            popup_efc8e1bc170c217abf8b69e49fd06720.setContent(html_ca6f2259df6715c7d8fb157516ba6c50);
+        
+
+        marker_0b1ffd077a9203e200280ea7c8a18ceb.bindPopup(popup_efc8e1bc170c217abf8b69e49fd06720)
+        ;
+
+        
+    
+    
+            var marker_e0ce1ab76da1e41eab3596ea46dd5bdf = L.marker(
+                [39.6674, -4.4764],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_c555a0d45d1ec4cc6789a6cdb47b9d28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31116b05735f9ef24821dffdb29a387b = $(`<div id="html_31116b05735f9ef24821dffdb29a387b" style="width: 100.0%; height: 100.0%;">San Martín de Montalbán</div>`)[0];
+            popup_c555a0d45d1ec4cc6789a6cdb47b9d28.setContent(html_31116b05735f9ef24821dffdb29a387b);
+        
+
+        marker_e0ce1ab76da1e41eab3596ea46dd5bdf.bindPopup(popup_c555a0d45d1ec4cc6789a6cdb47b9d28)
+        ;
+
+        
+    
+    
+            var marker_d1fe901a315a1d6d8d09a01d912d57c7 = L.marker(
+                [39.6768, -5.0228],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_80b477d8819bd3ea14f20ab458106ba3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_484aa647678d922f1f357ceac0aaef05 = $(`<div id="html_484aa647678d922f1f357ceac0aaef05" style="width: 100.0%; height: 100.0%;">Alcaudete de la Jara</div>`)[0];
+            popup_80b477d8819bd3ea14f20ab458106ba3.setContent(html_484aa647678d922f1f357ceac0aaef05);
+        
+
+        marker_d1fe901a315a1d6d8d09a01d912d57c7.bindPopup(popup_80b477d8819bd3ea14f20ab458106ba3)
+        ;
+
+        
+    
+    
+            var marker_4d8106a5396e05175bb776c5fb8be843 = L.marker(
+                [39.7462, -5.0835],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_4d92c1b2dc4e8cdd60e2050a785335e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3854de4378388acce79a1cb40f87981e = $(`<div id="html_3854de4378388acce79a1cb40f87981e" style="width: 100.0%; height: 100.0%;">Belvís de la Jara</div>`)[0];
+            popup_4d92c1b2dc4e8cdd60e2050a785335e0.setContent(html_3854de4378388acce79a1cb40f87981e);
+        
+
+        marker_4d8106a5396e05175bb776c5fb8be843.bindPopup(popup_4d92c1b2dc4e8cdd60e2050a785335e0)
+        ;
+
+        
+    
+    
+            var marker_e8b60528b24bb4b4fcaceabd08f60780 = L.marker(
+                [39.6206, -4.8865],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_039527a3cab8775e8d633dc5e91d9aa5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce08fbb26362e3c236c3b62c5a86eaa0 = $(`<div id="html_ce08fbb26362e3c236c3b62c5a86eaa0" style="width: 100.0%; height: 100.0%;">Robledo del Mazo</div>`)[0];
+            popup_039527a3cab8775e8d633dc5e91d9aa5.setContent(html_ce08fbb26362e3c236c3b62c5a86eaa0);
+        
+
+        marker_e8b60528b24bb4b4fcaceabd08f60780.bindPopup(popup_039527a3cab8775e8d633dc5e91d9aa5)
+        ;
+
+        
+    
+    
+            var marker_c567d2e75772577392077d19ec950a83 = L.marker(
+                [39.8256, -4.962],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_1dc64625118f172e5c548119f9f9c227 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ed5dad81d03fd68f2354b59d3bf3d7f = $(`<div id="html_2ed5dad81d03fd68f2354b59d3bf3d7f" style="width: 100.0%; height: 100.0%;">Navalcán</div>`)[0];
+            popup_1dc64625118f172e5c548119f9f9c227.setContent(html_2ed5dad81d03fd68f2354b59d3bf3d7f);
+        
+
+        marker_c567d2e75772577392077d19ec950a83.bindPopup(popup_1dc64625118f172e5c548119f9f9c227)
+        ;
+
+        
+    
+    
+            var marker_de7ec30c0fb5eeeac4758e3d1b51ad07 = L.marker(
+                [39.6264, -4.5036],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_aeb698a9854071bb6c8b8e639b5e3336 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adb76b8aef6d435a68130edae1da44cb = $(`<div id="html_adb76b8aef6d435a68130edae1da44cb" style="width: 100.0%; height: 100.0%;">Ventas con Peña Aguilera</div>`)[0];
+            popup_aeb698a9854071bb6c8b8e639b5e3336.setContent(html_adb76b8aef6d435a68130edae1da44cb);
+        
+
+        marker_de7ec30c0fb5eeeac4758e3d1b51ad07.bindPopup(popup_aeb698a9854071bb6c8b8e639b5e3336)
+        ;
+
+        
+    
+    
+            var marker_56763ae0d5f3a8a375b6bb94d5db0693 = L.marker(
+                [39.6177, -3.9131],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_15248aef70cc5ac80d86e25216c5631f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_675c98efa42f029457a6514074f017b8 = $(`<div id="html_675c98efa42f029457a6514074f017b8" style="width: 100.0%; height: 100.0%;">Los Yébenes</div>`)[0];
+            popup_15248aef70cc5ac80d86e25216c5631f.setContent(html_675c98efa42f029457a6514074f017b8);
+        
+
+        marker_56763ae0d5f3a8a375b6bb94d5db0693.bindPopup(popup_15248aef70cc5ac80d86e25216c5631f)
+        ;
+
+        
+    
+    
+            var marker_1e3c346089a34630578dec2023975d6b = L.marker(
+                [39.9105, -5.1561],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_a520d771ff0f9d228e997c758b0301bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a7ee06d4c9e9014431c5c78510d7a09 = $(`<div id="html_5a7ee06d4c9e9014431c5c78510d7a09" style="width: 100.0%; height: 100.0%;">Lagartera</div>`)[0];
+            popup_a520d771ff0f9d228e997c758b0301bf.setContent(html_5a7ee06d4c9e9014431c5c78510d7a09);
+        
+
+        marker_1e3c346089a34630578dec2023975d6b.bindPopup(popup_a520d771ff0f9d228e997c758b0301bf)
+        ;
+
+        
+    
+    
+            var marker_13d6ac5c3f686702dacbee2fd5345e5f = L.marker(
+                [39.9234, -5.1756],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_d2c09ce9fbdfc84aa17843a086a8eb55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac144a1173a6d5f5f19c85e5362f4199 = $(`<div id="html_ac144a1173a6d5f5f19c85e5362f4199" style="width: 100.0%; height: 100.0%;">Oropesa</div>`)[0];
+            popup_d2c09ce9fbdfc84aa17843a086a8eb55.setContent(html_ac144a1173a6d5f5f19c85e5362f4199);
+        
+
+        marker_13d6ac5c3f686702dacbee2fd5345e5f.bindPopup(popup_d2c09ce9fbdfc84aa17843a086a8eb55)
+        ;
+
+        
+    
+    
+            var marker_5ad5ed13f8314048aa5b1b12cb237ba7 = L.marker(
+                [39.8081, -5.1646],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_1728fff39562a3620abbdc2168f50587 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0f8f3b683a7d50ba7262c37cee50438 = $(`<div id="html_c0f8f3b683a7d50ba7262c37cee50438" style="width: 100.0%; height: 100.0%;">Puente del Arzobispo</div>`)[0];
+            popup_1728fff39562a3620abbdc2168f50587.setContent(html_c0f8f3b683a7d50ba7262c37cee50438);
+        
+
+        marker_5ad5ed13f8314048aa5b1b12cb237ba7.bindPopup(popup_1728fff39562a3620abbdc2168f50587)
+        ;
+
+        
+    
+    
+            var marker_b1f2b06846b3ac6b7f6b990d86655bc1 = L.marker(
+                [39.6925, -3.4971],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_6afea2a415a60fa1637693771b10ab09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f2bebf221bab85f81a7111104c4ead0 = $(`<div id="html_0f2bebf221bab85f81a7111104c4ead0" style="width: 100.0%; height: 100.0%;">Tembleque</div>`)[0];
+            popup_6afea2a415a60fa1637693771b10ab09.setContent(html_0f2bebf221bab85f81a7111104c4ead0);
+        
+
+        marker_b1f2b06846b3ac6b7f6b990d86655bc1.bindPopup(popup_6afea2a415a60fa1637693771b10ab09)
+        ;
+
+        
+    
+    
+            var marker_2915c938082f394b533e7bb9c2ba5d6c = L.marker(
+                [39.5745, -3.937],
+                {}
+            ).addTo(map_c5d3c493effa8531dad5e41822c7e23c);
+        
+    
+        var popup_3f10ee741124d6ddcaf16116efafe1de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8447ba38c718481df110960995cd25c = $(`<div id="html_f8447ba38c718481df110960995cd25c" style="width: 100.0%; height: 100.0%;">El Romeral</div>`)[0];
+            popup_3f10ee741124d6ddcaf16116efafe1de.setContent(html_f8447ba38c718481df110960995cd25c);
+        
+
+        marker_2915c938082f394b533e7bb9c2ba5d6c.bindPopup(popup_3f10ee741124d6ddcaf16116efafe1de)
+        ;
+
+        
+    
+</script>
+</html>
