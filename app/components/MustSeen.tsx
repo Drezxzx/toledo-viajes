@@ -33,7 +33,7 @@ export default function MustSeen() {
             <h1 className="font-bold text-xl">¿Las atrascciones mas importantes?</h1>
             <div className="flex justify-center items-center gap-5 ">
                 {
-                    atractions.map(({image, title, description}, i) =>(
+                    atractions.map(({image, title}, i) =>(
                         <div className="hover:scale-105 transition-all cursor-pointer" key={i}>
                             <img src={image} alt={title} className="rounded-xl object-cover w-72 h-[7rem]"/>
                             <h3 className="font-medium text-base">{title}</h3>
