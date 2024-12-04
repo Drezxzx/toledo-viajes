@@ -1,3 +1,4 @@
+import { IconBuildingBurjAlArab } from "@tabler/icons-react"
 import { Atrac, SectionMain } from "./SectionMain"
 
 export default function MustSeenHotel() {
@@ -24,6 +25,9 @@ export default function MustSeenHotel() {
     ]
 
     return(
-        <SectionMain items={restaurant} text="¿Los hoteles más famosos?"/>
+        <SectionMain items={restaurant}>
+            Los hoteles más famosos
+            <IconBuildingBurjAlArab className="text-buttonColor"/>
+        </SectionMain>
     )
 }

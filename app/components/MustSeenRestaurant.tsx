@@ -1,3 +1,4 @@
+import { IconChefHat } from "@tabler/icons-react"
 import { Atrac, SectionMain } from "./SectionMain"
 
 export default function MustSeenRestaurant() {
@@ -24,6 +25,9 @@ export default function MustSeenRestaurant() {
     ]
 
     return(
-        <SectionMain items={restaurant} text="¿Los restaurantes más famosos?"/>
+        <SectionMain items={restaurant}>
+            Los restaurantes más famosos
+            <IconChefHat className="text-buttonColor"/>
+        </SectionMain>
     )
 }
