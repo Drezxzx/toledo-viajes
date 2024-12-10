@@ -2,6 +2,7 @@
 "use client";
 import { IconLogout, IconTower } from "@tabler/icons-react";
 import { signIn, signOut, useSession } from "next-auth/react";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -41,13 +42,15 @@ export default function Header() {
     
 
     return (
-        <header className="w-screen flex justify-between items-center px-4 py-1 border-b border-borderColor">
+        <header className="w-screen flex mb-5 h-16 justify-between items-center px-4 py-1 border-b border-borderColor">
             <div className="flex justify-center items-center gap-2">
                 <span><IconTower className="text-buttonColor"/></span>
                 <h1  className="text-xl  font-bold">Toledo viajes</h1>
             </div>
 
-            <div>
+            <div className="flex justify-center items-center gap-2">
+                {session?.user && <Link className="hover:underline" href={"/itinerary"}>Mi itinerario</Link>}
+                <Link className="hover:underline" href={"/"}>Inicio</Link>
                 <Button />
             </div>
         </header>
