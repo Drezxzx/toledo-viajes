@@ -104,7 +104,7 @@ export default function ItineraryHero({ itinerary, email }: { itinerary: Itinera
                             <button
                                 onClick={handleClick}
                                 data-idplace={place.id}
-                                className={`${Boolean(place.visited) ? "bg-emerald-400" : "bg-bggray hover:bg-emerald-100"} w-[7rem] h-[5rem] md:w-[8rem] md:h-[3rem] flex items-center justify-center px-5 rounded-xl font-bold hover:scale-102 transition-all`}>
+                                className={`${Boolean(place.visited) ? "bg-emerald-400" : "bg-bggray hover:bg-emerald-100"} w-[7rem] h-[5rem] md:w-[11rem] md:h-[3rem] flex items-center justify-center px-5 rounded-xl font-bold hover:scale-102 transition-all`}>
                                 {Boolean(place.visited) ? "Visitado" : "Marcar como visitado"}
                             </button>
 
