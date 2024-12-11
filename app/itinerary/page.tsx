@@ -1,6 +1,6 @@
 import { auth } from "@/auth";
 import { getItineraryByUser } from "../actions/actions";
-import ItineraryHero from "../components/ItineraryHero";
+import ItineraryHero from "../../components/ui/ItineraryHero";
 
 export  default async function Page() {
   const user = await auth();
@@ -23,7 +23,7 @@ export  default async function Page() {
           <h1 className="text-4xl font-bold">Itinerario de toledo de 7 días</h1>
           <p className="text-parrafos">Toledo te espera con rincones llenos de historia y secretos por descubrir,  enamórate de la magia que pocos conocen.</p>
           <h1 className="text-4xl font-bold">Ruta</h1>
-          <ItineraryHero itinerary={sanitizedData} email={user?.user?.email as string} />
+          <ItineraryHero itinerary={sanitizedData} email={user?.user?.email as string}  />
         </section>
       </main>
   

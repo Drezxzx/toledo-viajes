@@ -1,8 +1,8 @@
-import DiscoverHero from "./components/DiscoverHero";
-import MapItinerary from "./components/Map";
-import MustSeen from "./components/MustSeen";
-import MustSeenHotel from "./components/MustSeenHotel";
-import MustSeenRestaurant from "./components/MustSeenRestaurant";
+import DiscoverHero from "../components/ui/DiscoverHero";
+import MapItinerary from "../components/ui/Map";
+import MustSeen from "../components/ui/MustSeen";
+import MustSeenHotel from "../components/ui/MustSeenHotel";
+import MustSeenRestaurant from "../components/ui/MustSeenRestaurant";
 
 export default function Home() {
   return (

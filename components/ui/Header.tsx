@@ -42,13 +42,13 @@ export default function Header() {
     
 
     return (
-        <header className="w-screen flex mb-5 h-16 justify-between items-center px-4 py-1 border-b border-borderColor">
+        <header className="w-screen flex mb-5 h-16 md:justify-between justify-center gap-8 md:gap-0 items-center px-4 py-1 border-b border-borderColor">
             <div className="flex justify-center items-center gap-2">
                 <span><IconTower className="text-buttonColor"/></span>
-                <h1  className="text-xl  font-bold">Toledo viajes</h1>
+                <h1  className="text-xl hidden md:block  font-bold">Toledo viajes</h1>
             </div>
 
-            <div className="flex justify-center items-center gap-2">
+            <div className="flex justify-center items-center gap-5">
                 {session?.user && <Link className="hover:underline" href={"/itinerary"}>Mi itinerario</Link>}
                 <Link className="hover:underline" href={"/"}>Inicio</Link>
                 <Button />

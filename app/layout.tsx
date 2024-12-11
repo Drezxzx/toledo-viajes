@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
-import Header from "./components/Header";
+import Header from "../components/ui/Header";
 
 
 export const metadata: Metadata = {

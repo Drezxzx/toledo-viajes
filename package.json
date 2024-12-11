@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,12 +11,19 @@
   "dependencies": {
     "@libsql/client": "^0.14.0",
     "@midudev/tailwind-animations": "^0.1.0",
+    "@radix-ui/react-progress": "^1.1.0",
     "@tabler/icons-react": "^3.24.0",
+    "@types/canvas-confetti": "^1.6.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.468.0",
     "next": "15.0.3",
     "next-auth": "^5.0.0-beta.25",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "react-multi-carousel": "^2.8.5"
+    "react-multi-carousel": "^2.8.5",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "typescript": "^5",
