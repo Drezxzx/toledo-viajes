@@ -17,12 +17,12 @@ export default function ItineraryHero({ itinerary, email }: { itinerary: Itinera
 
     useEffect(() => {
         if (places.length === 0) return;
-    
+
         const visited = itinerary.filter((place) => place.visited === 1);
         setNumberVisited(visited.length);
-        const normalizedProgress = (visited.length / 33) * 100; 
+        const normalizedProgress = (visited.length / 33) * 100;
         setProgress(normalizedProgress);
-        
+
     }, [places]);
 
     useEffect(() => {
@@ -34,8 +34,8 @@ export default function ItineraryHero({ itinerary, email }: { itinerary: Itinera
             });
         }
     }, [progress]);
-    
-    const checkIfAllVisited = (day : number) => {
+
+    const checkIfAllVisited = (day: number) => {
         const selectedPlaces = itinerary.filter(place => place.day === day);
         const visited = selectedPlaces.filter(place => place.visited === 1);
         return visited.length === selectedPlaces.length;
@@ -71,7 +71,7 @@ export default function ItineraryHero({ itinerary, email }: { itinerary: Itinera
             await setVisited(idPlace);
         }
 
-        
+
     }
 
     return (
@@ -94,14 +94,20 @@ export default function ItineraryHero({ itinerary, email }: { itinerary: Itinera
                 {
                     places.map(place => (
                         <div className="flex w-full justify-between items-center" key={place.id}>
-                            <div className="flex gap-2 items-center">
+                            <div className="flex gap-2 items-center w-[65%]">
                                 <img src={place.imagePlace} alt={place.place} className="md:w-[11rem] md:h-[5rem] w-20 h-16 rounded-md object-cover" />
                                 <div className="flex flex-col gap-1">
-                                    <h3 className="text-xl font-medium">{place.place.replace(".", "")}</h3>
+                                    <h3 className="md:text-xl text-base font-medium">{place.place.replace(".", "")}</h3>
                                     <span className="text-sm text-parrafos">{place.timePlace}</span>
                                 </div>
                             </div>
-                            <button onClick={handleClick} data-idplace={place.id} className={`${Boolean(place.visited) ? "bg-emerald-400" : " bg-bggray hover:bg-emerald-100"} px-5 py-1 rounded-xl font-bold h-[3rem]  md:w-[204.5px] hover:scale-105 transition-all `}>{Boolean(place.visited) ? "Visitado" : "Marcar como visitado"} </button>
+                            <button
+                                onClick={handleClick}
+                                data-idplace={place.id}
+                                className={`${Boolean(place.visited) ? "bg-emerald-400" : "bg-bggray hover:bg-emerald-100"} w-[7rem] h-[5rem] md:w-[8rem] md:h-[3rem] flex items-center justify-center px-5 rounded-xl font-bold hover:scale-102 transition-all`}>
+                                {Boolean(place.visited) ? "Visitado" : "Marcar como visitado"}
+                            </button>
+
                         </div>
                     ))
                 }
@@ -109,7 +115,7 @@ export default function ItineraryHero({ itinerary, email }: { itinerary: Itinera
             {places.length > 0 &&
                 <div className=" w-full flex flex-col gap-1  border-t border-borderColor mt-2 ">
                     <h1 className="text-xl font-bold">Alojamiento recomendado</h1>
-                    <div className="flex gap-2 items-center">
+                    <div className="flex gap-2 items-center flex-col md:flex-row">
                         <img src={places[0].hotelImage} alt={places[0].hotel} className="md:w-[11rem] md:h-[5rem] rounded-md object-cover" />
                         <h3 className="text-xl font-medium">{places[0].hotel.replace(".", "")}</h3>
                     </div>
