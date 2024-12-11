@@ -33,18 +33,18 @@ CREATE TABLE visitedPlaces(
 
 
 --consulta para solicitar lugares
-SELECT itinerary.id, day, place, hotels.name as hotel, hotels.image as hotelImage, itinerary.time as imagePlace, itinerary.image as timePlace, vp.visited FROM itinerary
-INNER JOIN hotels ON itinerary.idHotel = hotels.id
-INNER JOIN "visitedPlaces" as vp on vp."idPlace" = itinerary.id
-WHERE vp."idUser" = 5
-;
+-- SELECT itinerary.id, day, place, hotels.name as hotel, hotels.image as hotelImage, itinerary.time as imagePlace, itinerary.image as timePlace, vp.visited FROM itinerary
+-- INNER JOIN hotels ON itinerary.idHotel = hotels.id
+-- INNER JOIN "visitedPlaces" as vp on vp."idPlace" = itinerary.id
+-- WHERE vp."idUser" = 5
+-- ;
 
---Al crear un nuevo usuario, se crean las visitas de sus itinerarios
-INSERT INTO "visitedPlaces" ("idPlace", "idUser", visited) 
-SELECT id, (SELECT id FROM users WHERE email = ?), 0 FROM itinerary;
+-- --Al crear un nuevo usuario, se crean las visitas de sus itinerarios
+-- INSERT INTO "visitedPlaces" ("idPlace", "idUser", visited) 
+-- SELECT id, (SELECT id FROM users WHERE email = ?), 0 FROM itinerary;
 
-UPDATE "visitedPlaces" set visited = 1
-WHERE "idPlace" = ? AND "idUser" = (SELECT id FROM users WHERE email = ?);
+-- UPDATE "visitedPlaces" set visited = 1
+-- WHERE "idPlace" = ? AND "idUser" = (SELECT id FROM users WHERE email = ?);
 
 
 INSERT INTO itinerary(idHotel, day, place, image, time, visited)VALUES((SELECT id FROM hotels where name = 'Eugenia de montijo.'), '1', 'Plaza de Zocodover.', '09:30 - 10:30', 'https://www.freetour-toledo.es/wp-content/uploads/plaza-de-zocodover-1.jpg', 0 );
@@ -115,4 +115,3 @@ VALUES(
         'Hotel a posada en tembleque.',
         'https://images.trvl-media.com/lodging/5000000/4610000/4603200/4603130/d5b7c1a0.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill'
     );
-INSERT

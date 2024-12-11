@@ -19,8 +19,8 @@ export default function MustSeenHotel() {
         image: "./Hotel–Pintor–El-Greco.jpg"
     },
     {
-        title : "Eurostars Palacio Buenavista",
-        image: "./Eurostars–Palacio-Buenavista.jpg"
+        title : "Hospedería el molino en los yébenes",
+        image: "https://images.trvl-media.com/lodging/50000000/49030000/49028700/49028628/092520d3.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill"
     }
     ]
 
