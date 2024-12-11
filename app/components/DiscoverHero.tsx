@@ -19,7 +19,7 @@ export default function DiscoverHero() {
 
                     </p>
                 <div className="flex flex-row gap-2 mt-10">
-                    <button onClick={() => router.push("/itinerary")} className="bg-buttonColor transition-all hover:saturate-200 hover:scale-105 px-2 py-1 text-white font-semibold rounded-full">Ver online</button>
+                    <button onClick={() => router.push("/itinerary")} className="bg-buttonColor transition-all hover:saturate-200 hover:scale-105 px-2 py-1 text-white font-semibold rounded-full">Ver itinerario</button>
                 </div>
                 </div>
             </div>

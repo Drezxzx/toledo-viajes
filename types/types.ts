@@ -1,17 +1,14 @@
+
 export interface Itinerary {
-    hotel : Hotel ;
-    
+        id: number,
+        day: number,
+        place: string,
+        hotel: string,
+        hotelImage: string,
+        imagePlace: string,
+        timePlace: string,
+        visited: number
+      
 }
 
-export interface ItineraryItem {
-    day : number ;
-    place : string ;
-    description : string ;
-    image : string ;
-    visited : number ;
-}
 
-export interface Hotel {
-    name : string ;
-    image : string ;
-}

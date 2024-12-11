@@ -3,12 +3,12 @@ import { Atrac, SectionMain } from "./SectionMain"
 
 export default function MustSeenRestaurant() {
     const restaurant : Atrac[] = [{
-        title : "Restaurante La Orza",
-        image: "./la_orza.jpg"
+        title : "Adolfo Restaurante",
+        image: "https://www.restaurantesdebuenamesa.com/uploads/galerias/Adolfo002.jpg"
     },
     {
-        title : "Restaurante La Fábrica de Harinas",
-        image: "./la_fabrica.jpeg"
+        title : "Restaurante Casa Parrilla",
+        image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/c4/cd/2e/photo0jpg.jpg?w=1200&h=900&s=1"
     },
     {
         title : "Taberna Skala",
@@ -26,7 +26,7 @@ export default function MustSeenRestaurant() {
 
     return(
         <SectionMain items={restaurant}>
-            Los restaurantes más famosos
+            Restaurantes 
             <IconChefHat className="text-buttonColor"/>
         </SectionMain>
     )

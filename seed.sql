@@ -22,6 +22,7 @@ CREATE TABLE itinerary (
 );
 
 CREATE TABLE visitedPlaces(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     idPlace INTEGER NOT NULL,
     idUser INTEGER NOT NULL,
     visited INTEGER NOT NULL,
@@ -29,16 +30,21 @@ CREATE TABLE visitedPlaces(
     FOREIGN KEY(idUser) REFERENCES users(id)
 );
 
+
+
 --consulta para solicitar lugares
-SELECT itinerary.id, day, place, hotels.name as hotel, itinerary.image, vp.visited FROM itinerary
+SELECT itinerary.id, day, place, hotels.name as hotel, hotels.image as hotelImage, itinerary.time as imagePlace, itinerary.image as timePlace, vp.visited FROM itinerary
 INNER JOIN hotels ON itinerary.idHotel = hotels.id
 INNER JOIN "visitedPlaces" as vp on vp."idPlace" = itinerary.id
-WHERE vp."idUser" = 1
+WHERE vp."idUser" = 5
 ;
 
 --Al crear un nuevo usuario, se crean las visitas de sus itinerarios
 INSERT INTO "visitedPlaces" ("idPlace", "idUser", visited) 
-SELECT id, 1, 0 FROM itinerary;
+SELECT id, (SELECT id FROM users WHERE email = ?), 0 FROM itinerary;
+
+UPDATE "visitedPlaces" set visited = 1
+WHERE "idPlace" = ? AND "idUser" = (SELECT id FROM users WHERE email = ?);
 
 
 INSERT INTO itinerary(idHotel, day, place, image, time, visited)VALUES((SELECT id FROM hotels where name = 'Eugenia de montijo.'), '1', 'Plaza de Zocodover.', '09:30 - 10:30', 'https://www.freetour-toledo.es/wp-content/uploads/plaza-de-zocodover-1.jpg', 0 );

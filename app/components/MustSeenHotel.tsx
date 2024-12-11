@@ -26,7 +26,7 @@ export default function MustSeenHotel() {
 
     return(
         <SectionMain items={restaurant}>
-            Los hoteles más famosos
+            Hospedajes 
             <IconBuildingBurjAlArab className="text-buttonColor"/>
         </SectionMain>
     )

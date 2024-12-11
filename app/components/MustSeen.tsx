@@ -28,7 +28,7 @@ export default function MustSeen() {
 
     return (
         <SectionMain items={atractions}>
-             Los sitios más importantes 
+             Lugares de interés
             <IconBuildings className="text-buttonColor" />
         </SectionMain>
     )
