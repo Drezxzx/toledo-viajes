@@ -15,8 +15,10 @@ export default function DiscoverHero() {
                         Camino de Toledo
                     </h1>
                     <p className="text-sm text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non et deleniti corrupti. Sapiente cum dolorem quia pariatur possimus temporibus porro eveniet ipsa reprehenderit, maxime, et fugit omnis unde, mollitia nostrum.
-
+                    Descubre con nosotros Toledo a través de un itenerario de 7 días mediante el cual podrás conocer los rincones más asombrosos. 
+                   
+                    <p>¿Podrás conseguir completar el itinerario que propondremos? </p>
+                    <p> Si lo intentas obtendrás númerosos descuentos en el camino y un diploma oficial al final de el recorrido.</p>
                     </p>
                 <div className="flex flex-row gap-2 mt-10">
                     <button onClick={() => router.push("/itinerary")} className="bg-buttonColor transition-all hover:saturate-200 hover:scale-105 px-2 py-1 text-white font-semibold rounded-full">Ver itinerario</button>
