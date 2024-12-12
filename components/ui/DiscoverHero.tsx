@@ -16,10 +16,9 @@ export default function DiscoverHero() {
                     </h1>
                     <p className="text-sm text-white">
                     Descubre con nosotros Toledo a través de un itenerario de 7 días mediante el cual podrás conocer los rincones más asombrosos. 
-                   
-                    <p>¿Podrás conseguir completar el itinerario que propondremos? </p>
-                    <p> Si lo intentas obtendrás númerosos descuentos en el camino y un diploma oficial al final de el recorrido.</p>
                     </p>
+                    <p className="text-sm text-white">¿Podrás conseguir completar el itinerario que propondremos? </p>
+                    <p className="text-sm text-white"> Si lo intentas obtendrás númerosos descuentos en el camino y un diploma oficial al final de el recorrido.</p>
                 <div className="flex flex-row gap-2 mt-10">
                     <button onClick={() => router.push("/itinerary")} className="bg-buttonColor transition-all hover:saturate-200 hover:scale-105 px-2 py-1 text-white font-semibold rounded-full">Ver itinerario</button>
                 </div>
