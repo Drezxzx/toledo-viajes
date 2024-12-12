@@ -75,8 +75,8 @@ export default function ItineraryHero({ itinerary, email }: { itinerary: Itinera
     }
 
     return (
-        <section className="w-full p-1 flex flex-col gap-2">
-            <ul className="md:flex w-full justify-start gap-5 grid grid-cols-4 ">
+        <section className="w-full p-1 flex flex-col gap-2 ">
+            <ul className="md:flex w-full justify-start gap-5 grid grid-cols-4  ">
                 {
                     days.map(day => <li key={day} className={`${Number(day) === selectedDay ? "bg-slate-400/80" : ""} flex gap-2 py-2 rounded-xl px-5 cursor-pointer text-sm relative font-semibold bg-bggray items-center hover:bg-slate-400/80 transition-all duration-300`} onClick={() => setSelectedDay(Number(day))}>
                         {checkIfAllVisited(Number(day)) && <IconCircleCheckFilled className='text-emerald-400 absolute top-[-7px] right-[-9px]' size={23} />}
@@ -90,7 +90,7 @@ export default function ItineraryHero({ itinerary, email }: { itinerary: Itinera
                 <Progress value={progress} className=" w-full" />
             </div>}
 
-            <article className="flex flex-col gap-2 w-full mt-4">
+            <article className="flex flex-col gap-2 w-full mt-4 animate-fade-in-down">
                 {
                     places.map(place => (
                         <div className="flex w-full justify-between items-center" key={place.id}>
