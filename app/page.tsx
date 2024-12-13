@@ -1,3 +1,4 @@
+import PassportHero from "@/components/ui/PassportHero";
 import DiscoverHero from "../components/ui/DiscoverHero";
 import MapItinerary from "../components/ui/Map";
 import MustSeen from "../components/ui/MustSeen";
@@ -13,6 +14,7 @@ export default function Home() {
         <MustSeen />
         <MustSeenRestaurant />
         <MustSeenHotel />
+        <PassportHero />
       </section>
     </main>
 

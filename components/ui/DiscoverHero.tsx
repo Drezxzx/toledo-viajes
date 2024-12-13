@@ -2,9 +2,11 @@
 "use client";
 
 import { IconBuildingCommunity } from "@tabler/icons-react";
+import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 export default function DiscoverHero() {
+    const { data: session } = useSession();
     const router = useRouter();
     return (
         <section className="flex flex-col gap-2 justify-center">
@@ -20,7 +22,10 @@ export default function DiscoverHero() {
                     <p className="text-sm text-white">¿Podrás conseguir completar el itinerario que propondremos? </p>
                     <p className="text-sm text-white"> Si lo intentas obtendrás númerosos descuentos en el camino y un diploma oficial al final de el recorrido.</p>
                 <div className="flex flex-row gap-2 mt-10">
-                    <button onClick={() => router.push("/itinerary")} className="bg-buttonColor transition-all hover:saturate-200 hover:scale-105 px-2 py-1 text-white font-semibold rounded-full">Ver itinerario</button>
+                    <button onClick={() => {
+                        if (!session?.user) signIn("google")
+                        else router.push("/itinerary")
+                        }} className="bg-buttonColor transition-all hover:saturate-200 hover:scale-105 px-2 py-1 text-white font-semibold rounded-full">Ver itinerario</button>
                 </div>
                 </div>
             </div>
