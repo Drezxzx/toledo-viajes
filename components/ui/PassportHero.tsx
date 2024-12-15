@@ -9,7 +9,7 @@ export default function PassportHero() {
             <h1 className="font-bold text-xl flex gap-2 items-center">Pasaporte de Toledo <IconEPassport className="text-buttonColor" /> </h1>
 
             <div className=" flex gap-1 items-center flex-col md:flex-row">
-                <img src="./passport.jpeg" alt="Imagen de pasaporte" className="size-[70%]  rounded-lg" />
+                <img src="./passport.jpeg" alt="Imagen de pasaporte" className="size-[70%] md:w-[30%]  rounded-lg" />
                 <div className="flex flex-col gap-2 md:pl-5 ">
                     <p className="text-justify">
                         Vive Toledo como nunca antes con el Pasaporte del Camino. A medida que recorres los lugares más emblemáticos de la ciudad y sus alrededores, sella cada parada y guarda un recuerdo único de tu aventura.
